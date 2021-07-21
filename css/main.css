@@ -1,0 +1,21 @@
+.create{
+    margin-top: 45px;
+    padding: 25px;
+    border: 1px solid red;
+}
+
+.data{
+    margin-top: 45px;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+.partial{
+    margin-top: 45px;
+    padding: 10px;
+    border: 1px solid purple;
+}
+
+.data>.row>p{
+    font-weight: bold;
+}

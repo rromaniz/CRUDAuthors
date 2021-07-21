@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center">
+        <h1>CRUD API</h1>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+        <button class="btn ml-3 btn btn-success" id="button1">Create Entry</button>
+        <button class="btn ml-3 btn-primary " id="button2">Update Entry</button>
+        <button class="btn ml-3 btn-info" id="button3">Partial Entry</button>
+        <button class="btn  ml-3 btn btn-danger" id="button4">Delete</button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="create col-6">
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" id="name" class="form-control" placeholder="name">
+                        </div>
+                        <div class="col">
+                            <input type="text" id="last_name" class="form-control" placeholder="Last_name">
+                        </div>
+                    </div>
+                    <div class="form-row mt-4">
+                        <div class="col-3">
+                            <input type="text" id="nacionalidad" class="form-control" placeholder="Nacionalidad">
+                        </div>
+                        <div class="col-9">
+                            <input type="text" id="biography" class="form-control" placeholder="biography">
+                        </div>
+                    </div>
+                    <div class="form-row mt-4">
+                        <div class="col-3">
+                            <input type="text" id="gender" class="form-control" placeholder="Gender">
+                        </div>
+                        <div class="col-3">
+                            <input type="text" id="age" class="form-control" placeholder="Age">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6 partial" style="display: none;">
+                <div class="row">
+                    <div class="col-6">
+                        <select class="form-select form-select-lg" id="select" aria-label="Default select example">
+                            <option selected>Selecciona campo</option>
+                            <option value="name">Nombre</option>
+                            <option value="last_name">Apellido</option>
+                            <option value="nacionalidad">Nacionalidad</option>
+                            <option value="biography">Biografia</option>
+                            <option value="gender">Genero</option>
+                            <option value="age">Edad</option>
+                          </select>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" id="update" class="form-control" placeholder="Update">
+                    </div>
+                </div>
+                <div class="form-row justify-content-center mt-3">
+                    <button class="btn btn-success" id="button5">Update</button>
+                </div>
+            </div>
+            <div class="col-6 data">
+                <div class="row">
+                    <div class="col-6">
+                        <b>Nombre:</b> <p id="showname"></p>
+                    </div>
+                    <div class="col-6">
+                        <b>ID:</b> <p id="id"></p>
+                    </div>
+                </div>
+                 <div class="row">
+                     <div class="col-6"><b>Bio:</b> <p id="showbio"></p></div>
+                     <div class="col-6"><b>Nacimiento:</b> <p id="shownac"></p></div>
+                 </div>
+                 <div class="row">
+                    <div class="col-6"><b>Genero:</b> <p id="showgender"></p></div>
+                    <div class="col-6"><b>Edad:</b> <p id="showage"></p></div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
